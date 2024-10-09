@@ -49,3 +49,22 @@
 
         I love looking for new cloths/shoes. Stockx is a very popular platfrom to buy shoes
         
+
+## My Mermaid 
+
+### How to Get to School
+``` mermaid
+flowchart TD
+    Wake_Up-->Get_Ready_For_School
+    Get_Ready_For_School-->Drive_To_BusStop
+    Get_Ready_For_School-->Drive_To_School
+    Drive_To_BusStop-->Get_On_The_Bus
+    Get_On_The_Bus-->Get_Off_The_Bus
+    Get_Off_The_Bus-->Walk_To_School
+
+```
+
+## Mindmap
+
+``` mermaid
+mindmap
