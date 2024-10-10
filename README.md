@@ -53,6 +53,7 @@
 ## My Mermaid 
 
 ### How to Get to School
+### Flow Chart
 ``` mermaid
 flowchart TD
     Wake_Up-->Get_Ready_For_School
@@ -64,7 +65,16 @@ flowchart TD
 
 ```
 
-## Mindmap
+### 24 Hours of My Life
+### SanKey
 
-``` mermaid
-mindmap
+```mermaid
+sankey-beta
+24-hours,Sleep,8
+24-hours,Home-Work,2
+24-hours,Entertainment,2
+24-hours,Workout,1
+24-hours,School,7
+24-hours,Commute,2
+24-hours,Eating,1
+24-hours,Shower/Hygine,1
