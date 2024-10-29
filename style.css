@@ -9,6 +9,11 @@ Dark Shades: #2D3127
 body{
 background-color:#29586C
 }
+.name{
+color:darkcyan;
+font-family:"Tahoma";
+font-size: ;
+}
 h1{
 color:#81B589   
 }
