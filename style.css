@@ -43,7 +43,7 @@ img {
     width: 50%;
     border-radius: 70%;
 }
-.navgation {
+.navigation {
 width: 90%;
 position: -webkit-sticky;
 position: fixed;
@@ -63,7 +63,7 @@ text-align: center;
 }
 
 #navlist a {
-display: block;
+display: inline-block;
 color: #ffffff;
 padding: 14px 16px;
 text-decoration: none;
