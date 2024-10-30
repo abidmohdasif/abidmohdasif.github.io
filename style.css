@@ -6,14 +6,13 @@ Dark Accent: #858478;
 Dark Shades: #2D3127
 
 */
+*{
+    font-family:'Poppins';
+}
 body{
 background-color:#29586C
 }
-.name{
-color:darkcyan;
-font-family:"Tahoma";
-font-size: ;
-}
+
 h1{
 color:#81B589   
 }
@@ -34,4 +33,16 @@ color:#F0E7C1
 }
 ol{
 color:#C8B486
+}
+.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 70%;
+}
+.navbar {
+list-style-type: none; /*removes bullets*/
+margin: 0;
+padding: 0;
 }
