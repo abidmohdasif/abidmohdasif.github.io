@@ -44,7 +44,7 @@ img {
     border-radius: 70%;
 }
 .navigation {
-width: 90%;
+width: 100%;
 position: -webkit-sticky;
 position: fixed;
 top: 0;
