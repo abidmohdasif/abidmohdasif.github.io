@@ -9,6 +9,9 @@ Dark Shades: #2D3127
 *{
     font-family:'Poppins';
 }
+.center{
+    text-align: center;
+}
 body{
 background-color:#29586C
 }
@@ -34,10 +37,9 @@ color:#F0E7C1
 ol{
 color:#C8B486
 }
-.image {
+img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     width: 50%;
     border-radius: 70%;
 }
