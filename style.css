@@ -43,8 +43,32 @@ img {
     width: 50%;
     border-radius: 70%;
 }
-.navbar {
-list-style-type: none; /*removes bullets*/
+.navgation {
+width: 90%;
+position: -webkit-sticky;
+position: fixed;
+top: 0;
+display: flex;
+flex-wrap: wrap;
+list-style-type: none;
 margin: 0;
 padding: 0;
+justify-content: space-evenly;
+align-items: center;
+background-color: #29586C;
 }
+#navlist {
+flex: 1;
+text-align: center;
+}
+
+#navlist a {
+display: block;
+color: #ffffff;
+padding: 14px 16px;
+text-decoration: none;
+}
+#navlist a:hover {
+background-color: black;
+}
+
