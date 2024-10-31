@@ -74,6 +74,7 @@ background-color: black;
 header{
     margin-top: 100px;
 }
-@media screen {
-    
-}
+@media screen and (max-width: 600px){
+    .column{
+        width:100%;
+    }
