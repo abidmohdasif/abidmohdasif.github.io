@@ -71,4 +71,9 @@ text-decoration: none;
 #navlist a:hover {
 background-color: black;
 }
-
+.heads{
+    margin-top: 100px;
+}
+@media screen {
+    
+}
