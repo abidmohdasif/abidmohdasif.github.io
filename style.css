@@ -1,11 +1,9 @@
-
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 body {
     background-color: #29586C;
@@ -53,10 +51,10 @@ img {
 
 .column {
     display: inline-block;
-    float:left;
+    float: left;
     width: 29%;
     margin: 1em;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .navigation {
@@ -90,12 +88,37 @@ img {
     background-color: black;
 }
 
-
 header {
     margin-top: 100px;
 }
 
+/* Profile Image Styling */
+.profile-img {
+    border-radius: 50%;
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
 
+/* Section Styling */
+section {
+    margin: 40px 10%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.column {
+    margin-bottom: 40px;
+}
+
+.column h2 {
+    margin-top: 20px;
+}
+
+/* Form Section */
 .form-section {
     width: 70%;
     margin: 50px auto;
@@ -147,7 +170,7 @@ small {
     color: #323131;
 }
 
-
+/* Button Styling */
 button {
     background-color: #00776b;
     color: rgb(0, 0, 0);
@@ -162,7 +185,7 @@ button:hover {
     background-color: #81B589;
 }
 
-
+/* Form Validation Colors */
 input:invalid, textarea:invalid {
     border-color: red;
 }
@@ -175,7 +198,7 @@ input:valid, textarea:valid {
     border-color: green;
 }
 
-
+/* Responsive Design */
 @media screen and (max-width: 600px) {
     .navigation {
         flex-direction: column;
@@ -187,5 +210,15 @@ input:valid, textarea:valid {
 
     .form-group {
         margin-bottom: 15px;
+    }
+
+    .profile-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    section {
+        margin: 20px;
+        padding: 15px;
     }
 }
