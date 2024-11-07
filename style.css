@@ -92,7 +92,7 @@ header {
     margin-top: 100px;
 }
 
-/* Profile Image Styling */
+
 .profile-img {
     border-radius: 50%;
     margin-top: 20px;
@@ -118,7 +118,7 @@ section {
     margin-top: 20px;
 }
 
-/* Form Section */
+
 .form-section {
     width: 70%;
     margin: 50px auto;
@@ -170,7 +170,7 @@ small {
     color: #323131;
 }
 
-/* Button Styling */
+
 button {
     background-color: #00776b;
     color: rgb(0, 0, 0);
@@ -185,7 +185,7 @@ button:hover {
     background-color: #81B589;
 }
 
-/* Form Validation Colors */
+
 input:invalid, textarea:invalid {
     border-color: red;
 }
@@ -198,7 +198,7 @@ input:valid, textarea:valid {
     border-color: green;
 }
 
-/* Responsive Design */
+
 @media screen and (max-width: 600px) {
     .navigation {
         flex-direction: column;
