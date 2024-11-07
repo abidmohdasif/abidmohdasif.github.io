@@ -1,11 +1,3 @@
-/* Color palette:
-Light Shade:#F9F8F8;
-Light Accent:#BF8F7B;
-Main Brand Color:#7B7B79;
-Dark Accent: #858478;
-Dark Shades: #2D3127
-
-*/
 /* Global Styles */
 * {
     font-family: 'Poppins', sans-serif;
@@ -96,25 +88,84 @@ header {
     margin-top: 100px;
 }
 
-/* Flexbox Layout for 3-column */
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #f0f0f0;
-    padding: 20px;
-    height: 300px;
+/* Form Section Styling */
+.form-section {
+    width: 70%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.box {
-    background-color: rgba(0, 0, 0, 0.1);
-    color: #333;
-    padding: 15px;
-    margin: 10px;
-    flex-grow: 1;
-    min-width: 200px;
-    text-align: center;
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus, textarea:focus {
+    border-color: #81B589;
+    outline: none;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin: 0 10px 0 0;
+}
+
+small {
+    font-size: 0.85em;
+    color: #888;
+}
+
+/* Button Styling */
+button {
+    background-color: #66B0A8;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+button:hover {
+    background-color: #81B589;
+}
+
+/* Error and Validation Messages */
+input:invalid, textarea:invalid {
+    border-color: red;
+}
+
+input:invalid:focus, textarea:invalid:focus {
+    border-color: darkred;
+}
+
+input:valid, textarea:valid {
+    border-color: green;
 }
 
 /* Responsive Design for Small Screens */
@@ -122,72 +173,12 @@ header {
     .navigation {
         flex-direction: column;
     }
-    .container {
-        flex-direction: column;
+
+    .form-section {
+        width: 90%;
     }
-    .box {
-        min-width: 100%;
-    }
-}
 
-/* Button Hover and Focus Styling */
-button, a {
-    cursor: pointer;
-}
-
-button:hover, a:hover {
-    background-color: #CDB26C;
-}
-
-input:focus, textarea:focus, button:focus {
-    border-color: #81B589;
-}
-
-/* Form Styling */
-form {
-    width: 80%;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-form input, form textarea, form select {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 4px;
-    border: 1px solid #ddd;
-}
-
-form input:focus, form textarea:focus {
-    outline: none;
-    border: 1px solid #81B589;
-}
-
-form button {
-    background-color: #66B0A8;
-    color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #81B589;
-}
-
-/* Media Queries */
-@media screen and (max-width: 600px) {
-    .navigation {
-        flex-direction: column;
-    }
-    .container {
-        flex-direction: column;
-    }
-    .box {
-        min-width: 100%;
+    .form-group {
+        margin-bottom: 15px;
     }
 }
