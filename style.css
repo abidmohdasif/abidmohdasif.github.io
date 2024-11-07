@@ -6,86 +6,188 @@ Dark Accent: #858478;
 Dark Shades: #2D3127
 
 */
-*{
-    font-family:'Poppins';
-}
-.center{
-    text-align: center;
-}
-body{
-background-color:#29586C
+/* Global Styles */
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1{
-color:#81B589   
+/* Basic Page Styles */
+body {
+    background-color: #29586C;
+    color: #BCC3A2;
 }
-h2{
-color:#66B0A8
+
+.center {
+    text-align: center;
 }
-h3{
-color:#CDB26C
+
+h1 {
+    color: #81B589;
 }
-h4{
-color:#94C4CC
+
+h2 {
+    color: #66B0A8;
 }
-p{
-color:#BCC3A2
+
+h3 {
+    color: #CDB26C;
 }
-ul{
-color:#F0E7C1
+
+h4 {
+    color: #94C4CC;
 }
-ol{
-color:#C8B486
+
+p {
+    color: #BCC3A2;
 }
+
+ul {
+    color: #F0E7C1;
+}
+
+ol {
+    color: #C8B486;
+}
+
 img {
     display: block;
     margin: 0 auto;
     width: 50%;
     border-radius: 70%;
 }
+
+/* Navigation Bar */
 .navigation {
-width: 100%;
-position: -webkit-sticky;
-position: fixed;
-top: 0;
-display: flex;
-flex-wrap: wrap;
-list-style-type: none;
-margin: 0;
-padding: 0;
-justify-content: space-evenly;
-align-items: center;
-background-color: #29586C;
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #29586C;
 }
+
 #navlist {
-flex: 1;
-text-align: center;
+    flex: 1;
+    text-align: center;
 }
 
 #navlist a {
-display: inline-block;
-color:whitesmoke;
-padding: 14px 16px;
-text-decoration: none;
+    display: inline-block;
+    color: whitesmoke;
+    padding: 14px 16px;
+    text-decoration: none;
 }
+
 #navlist a:hover {
-background-color: black;
+    background-color: black;
 }
-header{
+
+/* Header Styling */
+header {
     margin-top: 100px;
 }
 
-
-.column {
-    display: inline-block;
-    float:left;
-    width: 30%;
-    margin: 1em;
-    background-color: rgba(0,0,0,0);
+/* Flexbox Layout for 3-column */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    height: 300px;
 }
 
-@media screen and (max-width: 600px){
-    .column{
-        width:100%;
+.box {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #333;
+    padding: 15px;
+    margin: 10px;
+    flex-grow: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+/* Responsive Design for Small Screens */
+@media screen and (max-width: 600px) {
+    .navigation {
+        flex-direction: column;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .box {
+        min-width: 100%;
+    }
+}
+
+/* Button Hover and Focus Styling */
+button, a {
+    cursor: pointer;
+}
+
+button:hover, a:hover {
+    background-color: #CDB26C;
+}
+
+input:focus, textarea:focus, button:focus {
+    border-color: #81B589;
+}
+
+/* Form Styling */
+form {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border: 1px solid #81B589;
+}
+
+form button {
+    background-color: #66B0A8;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #81B589;
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+    .navigation {
+        flex-direction: column;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .box {
+        min-width: 100%;
     }
 }
