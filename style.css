@@ -1,4 +1,4 @@
-/* Global Styles */
+
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-/* Basic Page Styles */
+
 body {
     background-color: #29586C;
     color: #BCC3A2;
@@ -51,7 +51,7 @@ img {
     border-radius: 70%;
 }
 
-/* Navigation Bar */
+
 .navigation {
     width: 100%;
     position: -webkit-sticky;
@@ -83,12 +83,12 @@ img {
     background-color: black;
 }
 
-/* Header Styling */
+
 header {
     margin-top: 100px;
 }
 
-/* Form Section Styling */
+
 .form-section {
     width: 70%;
     margin: 50px auto;
@@ -140,10 +140,10 @@ small {
     color: #888;
 }
 
-/* Button Styling */
+
 button {
     background-color: #66B0A8;
-    color: white;
+    color: bisque;
     padding: 12px;
     border: none;
     border-radius: 5px;
@@ -155,7 +155,7 @@ button:hover {
     background-color: #81B589;
 }
 
-/* Error and Validation Messages */
+
 input:invalid, textarea:invalid {
     border-color: red;
 }
@@ -168,7 +168,7 @@ input:valid, textarea:valid {
     border-color: green;
 }
 
-/* Responsive Design for Small Screens */
+
 @media screen and (max-width: 600px) {
     .navigation {
         flex-direction: column;
